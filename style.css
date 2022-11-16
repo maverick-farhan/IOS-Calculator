@@ -1,0 +1,191 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@font-face {
+  font-family: "iosFont";
+  src: url("Helvetica.ttf") format("ttf"), url("Helvetica-Bold.ttf")
+      format("ttf");
+}
+
+:root{
+--btnPrimary:#FF5403;
+--btnSecondary:#423F3E;
+--btnAction:#C8C6C6;
+--resultFont:'Quicksand', sans-serif;
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"iosFont";
+}
+
+html,body{
+box-sizing:border-box;
+width:100%;
+height:100%;
+background:#eee;
+}
+
+html{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+
+main{
+width:100%;
+height:100%;
+background-color:#E79CC2;
+display:flex;
+overflow:hidden;
+justify-content:center;
+align-items:center;
+}
+
+div#wrapper{
+width:300px;
+position:relative;
+height:600px;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:10;
+}
+div.calWrapper{
+width:100%;
+z-index:9;
+position:absolute;
+height:100%;
+background-color:#040303;
+background-color:#050505;
+border-radius:30px;
+}
+
+img{
+position:relative;
+z-index:1;
+width:290%;
+height:auto;
+}
+
+/*Top Toggle*/
+div.topToggle{
+width:100%;
+height:10%;
+padding:30px;
+text-align:right;
+}
+i#toggleIcon{
+cursor:pointer;
+color:#FF5403;
+font-size:27px;
+}
+/*Top Toggle*/
+
+/*Result Area*/
+div#resultWrapper{
+width:100%;
+height:25%;
+padding:10px;
+}
+h1#resultArea{
+color:#fff;
+width:100%;
+height:100%;
+font-weight:100;
+font-family:'Quicksand', sans-serif;
+font-size:250%;
+display:flex;
+justify-content:end;
+align-items:flex-end;
+text-align:right;
+}
+/*Result Area*/
+
+/*Calculator Btns Area*/
+
+div#calButtons{
+width:100%;
+height:65%;
+padding:5px;
+}
+
+div#firstRow,div#secondRow,div#thirdRow,div#fourthRow,div#fifthRow{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-around;
+}
+div#firstRow p,div#secondRow p,div#thirdRow p, div#fourthRow p,div#fifthRow p{
+width:60px;
+border-radius:50%;
+margin-bottom:9px;
+font-family:var(--resultFont);
+font-weight:900;
+padding-top:15px;
+font-size:20px;
+text-align:center;
+height:60px;
+}
+
+p.action{
+cursor:pointer;
+transition:all .3s ease;
+background-color:var(--btnAction);
+}
+p.action:hover{
+color:#fff;
+background-color:#222831;
+}
+
+p.operator{
+cursor:pointer;
+transition:all .3s ease;
+background-color:var(--btnPrimary);
+color:#fff;
+}
+p.operator:hover{
+background-color:#fff;
+color:#222831;
+}
+
+p.numbers{
+cursor:pointer;
+background:var(--btnSecondary);
+transition:all .3s ease;
+color:#fff;
+}
+p.numbers:hover{
+background-color:var(--btnAction);
+color:#222;
+}
+
+p.zero{
+width:135px !important;
+height:60px !important;
+border-radius:30px !important;
+}
+/*Calculator Btns Area*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
