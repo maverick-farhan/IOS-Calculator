@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOS Calculator</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="cal.css">
+  </head>
+  <body>
+	  <main>
+
+		  <div id="wrapper">
+			<img src="iphone.png" />
+
+			<div class ="calWrapper">
+			
+
+			<div class="topToggle">
+			<i class="ri-contrast-2-fill" id="toggleIcon"></i>
+			</div>
+		
+			<div id="resultWrapper">
+			<h1 id="resultArea"></h1>
+			</div>
+			<!--Five Rows Btns-->
+			<div id="calButtons">
+				<div id="firstRow">
+					<p class="btn clear action">AC</p>
+					<p class="btn complement inc/dec action">+/-</p>
+					<p class="btn mod action">%</p>
+					<p class="btn divide operator">&#247;</p>
+                                                                     
+				</div>
+
+				<div id="secondRow">
+					<p class="btn seven numbers">7</p>
+					<p class="btn eight numbers">8</p>
+					<p class="btn nine numbers">9</p>
+					<p class="btn multiply operator">&times;</p>
+
+				</div>
+				
+				<div id="thirdRow">
+					<p class="btn four numbers">4</p>
+					<p class="btn five numbers">5</p>
+					<p class="btn six numbers">6</p>
+					<p class="btn minus operator">-</p>
+				</div>
+				
+				<div id="fourthRow">
+					<p class="btn one numbers">1</p>
+					<p class="btn two numbers">2</p>
+					<p class="btn three numbers">3</p>
+					<p class="btn plus operator">+</p>
+				</div>
+				
+				<div id="fifthRow">
+					<p class="btn zero numbers">0</p>
+					<p class="btn point numbers">.</p>
+					<p class="btn equal answer operator">=</p>
+				</div>
+			</div>
+			<!--Five Rows Btns-->
+
+			</div><!--CalWrapper Close-->
+
+		  </div>
+	  </main>
+
+<audio id="audio" src="click.mp3"></audio>
+
+
+
+	<script src="cal.js"></script>
+  </body>
+</html>
